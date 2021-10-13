@@ -14,5 +14,4 @@ public interface AppointmentRepository extends JpaRepository<Appointment, Long> 
     @Override
     <S extends Appointment> S saveAndFlush(S s);
 
-
 }
