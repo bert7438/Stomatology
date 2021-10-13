@@ -34,10 +34,20 @@ li{
     list-style: none;
 }
 
-a {
+.link{
+    text-decoration: none;
+    color: #005FB2;
+}
+
+.header a{
     text-decoration: none;
     color: white;
 }
+
+p{
+    font-size: 1.25em;
+}
+
 .nav1,.nav2 {
     display: flex;
     justify-content: flex-end;
