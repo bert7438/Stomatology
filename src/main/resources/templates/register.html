@@ -7,11 +7,11 @@
 <body>
 <h1>Запись на прием в Стоматологию 1218</h1>
 <form action="#" th:action="@{registration}" th:object="${UserForm}" method="post">
-    <h2>Регистрация</h2>
-    <p>email:<input type="text"  /></p>
-    <p>name: <input type="text"  /></p>
-    <p>lastName: <input type="text" /></p>
-    <p>password: <input type="password"  /></p>
+    <h2>Детали записи</h2>
+    <p>Имя<input type="text"  /></p>
+    <p>Дата <input type="date"  /></p>
+    <p>Врач <input type="text" /></p>
+    <p>Примечания <input type="text"  /></p>
     <p><input type="submit" value="submit" /></p>
 </form>
 </body>
