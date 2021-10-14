@@ -30,6 +30,11 @@
     align-items: center;
     height: 88px;
 }
+
+ol li{
+    list-style: decimal;
+}
+
 li{
     list-style: none;
 }
