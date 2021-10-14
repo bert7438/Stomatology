@@ -24,8 +24,6 @@ public class Appointment {
     private int doctor_id;
     @Column(name = "notes")
     private String notes;
-    @Column(name = "createdAt")
-    private Date createdAt;
     @Column(name = "phoneNumber")
     private String phoneNumber;
 

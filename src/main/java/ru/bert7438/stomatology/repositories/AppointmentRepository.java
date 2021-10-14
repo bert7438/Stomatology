@@ -10,6 +10,7 @@ import java.util.Optional;
 @Repository
 public interface AppointmentRepository extends JpaRepository<Appointment, Long> {
 
+    Optional<Appointment> findByCustomer(String customer);
 
     @Override
     <S extends Appointment> S saveAndFlush(S s);
