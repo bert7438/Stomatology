@@ -10,16 +10,15 @@
 
 <form action="#" th:action="@{register}" th:object="${UserForm}" method="post">
     <h2>Детали записи</h2>
-    <p>Имя<input type="text"  /></p>
-    <p>Дата <input type="date"  /></p>
-    <p>Врач <select name="doctorselect">
-        <option value="1">Абдуллин Альберто</option>
-        <option value="2">Матчин Артемиан</option>
-        <option value="3">Смирнов Андрей</option>
-        <option value="4">Антипин Алекс</option>
+    <p>Имя<input type="text" th:field="*{customer}"/></p>
+    <p>Дата <input type="date" th:field="*{date}"/></p>
+    <p>Врач <select name="doctorselect" th:field="*{doctor_id}" datatype="int">
+        <option th:each="doctor: ${doctors}"
+                th:value="${doctor.id}"
+                th:utext="${doctor.lastName+doctor.firstName+doctor.specialty}"></option>
     </select></p>
-    <p>Примечания <input type="text"  /></p>
-    <p>Телефон <input type="text"></p>
+    <p>Примечания <input type="text" th:field="*{notes}"/></p>
+    <p>Телефон <input type="text" th:field="*{phoneNumber}"></p>
     <p><input type="submit" value="Записаться" /></p>
 
 </form>
