@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.Optional;
 
 @Repository
-public interface AppointmentRepository extends JpaRepository<Appointment, Long> {
+public interface AppointmentRepository extends JpaRepository<Appointment, Integer> {
 
     Optional<Appointment> findByCustomer(String customer);
 

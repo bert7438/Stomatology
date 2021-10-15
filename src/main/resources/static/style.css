@@ -53,15 +53,6 @@ p{
     font-size: 1.25em;
 }
 
-.nav1,.nav2 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav1 {
-    width: 800px;
-}
-
-.nav1 li ,.nav2 li{
-    padding-left: 50px;
+table{
+    border: 1px black;
 }
