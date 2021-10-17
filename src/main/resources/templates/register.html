@@ -15,7 +15,7 @@
     <p>Врач <select name="doctorselect" th:field="*{doctor_id}" datatype="int">
         <option th:each="doctor: ${doctors}"
                 th:value="${doctor.id}"
-                th:utext="${doctor.lastName+doctor.firstName+doctor.specialty}"></option>
+                th:utext="|${doctor.lastName} ${doctor.firstName} ${doctor.specialty}|"></option>
     </select></p>
     <p>Примечания <input type="text" th:field="*{notes}"/></p>
     <p>Телефон <input type="text" th:field="*{phoneNumber}"></p>

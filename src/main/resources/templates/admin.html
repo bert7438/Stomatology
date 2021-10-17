@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Наши стоматологи</title>
+    <link rel="stylesheet" th:href="@{/special.css}" href="static/style.css">
+</head>
+<body>
+<h1>Здесь отображаются записи на прием в Стоматологию 1218(для администрации только! Обычным пользователям просьба покинуть страницу)</h1>
+<br>
+<table>
+    <tr th:each="app:${appointments}">
+        <td th:utext="${app.date}">...</td>
+        <td th:utext="${app.customer}">...</td>
+        <td th:utext="${app.doctor_id}">...</td>
+        <td th:utext="${app.notes}">...</td>
+        <td th:utext="${app.phoneNumber}">...</td>
+    </tr>
+</table>
+
+</body>
+</html>
