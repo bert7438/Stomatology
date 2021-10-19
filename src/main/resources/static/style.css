@@ -31,10 +31,6 @@
     height: 88px;
 }
 
-ol li{
-    list-style: decimal;
-}
-
 li{
     list-style: none;
 }
@@ -55,4 +51,17 @@ p{
 
 table{
     border: 1px black;
+}
+
+.nav1,.nav2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav1 {
+    width: 800px;
+}
+
+.nav1 li ,.nav2 li{
+    padding-left: 50px;
 }
